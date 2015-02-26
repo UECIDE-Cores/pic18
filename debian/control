@@ -8,6 +8,7 @@ Standards-Version: 3.9.4
 
 Package: pic18
 Architecture: all
+Depends: xc8
 Recommends: libeeprom.h
 Description: Experimental PIC18 core
 
