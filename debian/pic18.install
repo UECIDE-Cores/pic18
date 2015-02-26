@@ -1,5 +1,5 @@
-api libraries/Misc/pic18
-core.txt libraries/Misc/pic18
-icons libraries/Misc/pic18
-main.c libraries/Misc/pic18
-tools libraries/Misc/pic18
+api cores/pic18
+core.txt cores/pic18
+icons cores/pic18
+main.c cores/pic18
+tools cores/pic18
