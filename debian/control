@@ -1,0 +1,33 @@
+Source: pic18
+Section: cores
+Priority: extra
+XBSC-Family: pic18
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: pic18
+Architecture: all
+Recommends: libeeprom.h
+Description: Experimental PIC18 core
+
+Package: libeeprom-pic18
+Architecture: all
+Provides: EEPROM.h
+Depends: pic18
+XBSC-Group: Storage
+XBSC-Subgroup: EEPROM
+Section: libraries
+Description: PIC18 EEPROM library
+ Store small amounts of data in the internal EEPROM of the PIC18
+
+Package: libleddisplay-pic18
+Architecture: all
+Provides: LEDDisplay.h
+XBSC-Group: Display
+Depends: pic18
+XBSC-Subgroup: LED
+Section: libraries
+Description: PIC18 LED Display library
+ Display numerals on a dual 7-segment display
+
