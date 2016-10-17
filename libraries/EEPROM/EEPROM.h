@@ -1,7 +1,7 @@
 #ifndef _EEPROM_H
 #define _EEPROM_H
 
-#include <api.h>
+#include <wiring.h>
 
 struct _eeprom_object {
     uint8_t (*read)(uint16_t);

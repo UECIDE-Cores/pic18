@@ -4,7 +4,7 @@
 
 void Z5HardwareSerial48begin(uint32_t baud) {
     pinMode(_EUSART_TX_PIN, OUTPUT);
-    pinMode(_EUSART_RX_PIN, INPUT);
+    pinMode(_EUSART_RX_PIN, INPUT_PULLUP);
 
     TXSTAbits.TXEN = 1;
     RCSTAbits.CREN = 1;

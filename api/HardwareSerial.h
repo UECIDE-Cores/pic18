@@ -1,7 +1,7 @@
 #ifndef _HARDWARE_SERIAL_H
 #define _HARDWARE_SERIAL_H
 
-#include <api.h>
+#include <wiring.h>
 
 #ifdef _HAS_EUSART
 

@@ -5,7 +5,10 @@ compiler=xc8
 core.flags=
 
 core.library.api=api
-core.header=api.h
+
+core.library.chip=api/chip/${build.mcu}
+
+core.header=wiring.h
 core.version=1
 version=1
 core.revision=2
