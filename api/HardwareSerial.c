@@ -48,6 +48,7 @@ void Z5HardwareSerial48begin(uint32_t baud) {
     }
 
     RCSTAbits.SPEN = 1;
+    IPR1bits.RCIP = 0; // Low priority
     PIR1bits.RCIF = 0;
     PIE1bits.RCIE = 1;
 }

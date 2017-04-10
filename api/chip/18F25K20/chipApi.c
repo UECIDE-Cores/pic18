@@ -20,6 +20,12 @@ static void interrupt high_priority __isr_hi_handler(void) {
         TMR0L = tpr & 0xFF;
         __millis++;
     }
+#ifdef _HAS_EUSART
+    if (PIE1bits.RCIE && PIR1bits.RCIF) {
+        PIR1bits.RCIF = 0;
+        Serial.ungetc(RCREG);
+    }
+#endif
 }
 
 static void interrupt low_priority __isr_lo_handler(void) {
